@@ -1,0 +1,86 @@
+@import '@fontsource/fira-mono';
+
+body {
+	min-height: 100vh;
+	width: 100vw;
+	margin: 0;
+	background-attachment: fixed;
+	background: rgb(142,200,191);
+background: linear-gradient(177deg, rgba(142,200,191,1) 0%, rgba(90,171,141,1) 19%, rgba(98,164,215,1) 66%, rgba(0,212,255,1) 100%);
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+a {
+	color: var(--color-theme-1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: start;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+	color: rgb(0, 0, 0);
+}
+
+.card { 
+	margin-right: auto; 
+	margin-left: auto; 
+	box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+	border-radius: 5px; 
+	backdrop-filter: blur(14px); 
+	background-color: rgba(255, 255, 255, 0.2); 
+} 
+
+h2 {
+	font-size: 1rem;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--color-text);
+}
+
+.text-column {
+	display: flex;
+	max-width: 48rem;
+	flex: 0.6;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
